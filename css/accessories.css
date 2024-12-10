@@ -1,0 +1,109 @@
+/*DEVELOPER: Sheikh Fahad Irfan, IS117-005, Fall, 2024 */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Header */
+  header {
+    background-color: #343a40;
+    color: white;
+  }
+  
+  header .navbar-brand img {
+    border-radius: 50%;
+  }
+  
+  /* Breadcrumb */
+  .breadcrumb {
+    background-color: #f8f9fa;
+    padding: 8px 15px;
+    border-radius: 5px;
+  }
+  
+  .breadcrumb a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .breadcrumb a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Promotional Banner */
+  .bg-light {
+    background-color: #f8f9fa !important;
+    border: 1px solid #ddd;
+  }
+  
+  .bg-light p {
+    color: #555;
+  }
+  
+  /* Accessories Section */
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Footer Styles */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+/*DEVELOPER: Sheikh Fahad Irfan, IS117-005, Fall, 2024 */
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .card {
+      margin-bottom: 15px;
+  }
+
+  .card-header {
+      font-size: 0.9rem;
+  }
+
+  .card-body h5 {
+      font-size: 1rem;
+  }
+}
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .breadcrumb {
+      font-size: 0.9rem;
+    }
+  
+    .card {
+      margin-bottom: 20px;
+    }
+  }

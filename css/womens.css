@@ -1,0 +1,217 @@
+/*DEVELOPER: Sheikh Fahad Irfan, IS117-005, Fall, 2024 */
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: #ddd;
+}
+
+/*DEVELOPER: Sheikh Fahad Irfan, IS117-005, Fall, 2024 */
+/* Hero Section */
+.hero {
+  height: 85vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+  z-index: 1;
+}
+
+.hero .container {
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.hero a {
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero a.btn-primary {
+  background-color: #d4af37;
+  border: none;
+  color: #fff;
+}
+
+.hero a.btn-primary:hover {
+  background-color: #b8860b;
+  transform: scale(1.1);
+}
+
+.hero a.btn-outline-light {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.hero a.btn-outline-light:hover {
+  background-color: #fff;
+  color: #000;
+  transform: scale(1.1);
+}
+
+
+/* Navbar Styles */
+.navbar {
+  background: rgba(0, 0, 0, 0.95); /* Dark transparent background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  padding: 15px 20px;
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f8f9fa;
+}
+
+.navbar .nav-link {
+  color: #f8f9fa;
+  padding: 10px 15px;
+  font-weight: 500;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .dropdown-item:hover {
+  color: #d4af37; /* Gold hover effect */
+}
+
+.navbar .dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.9); /* Dark dropdown background */
+  border: none;
+  padding: 10px 0;
+}
+
+.navbar .dropdown-item {
+  color: #f8f9fa;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar .dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Subtle highlight */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar .nav-link {
+    padding: 10px;
+  }
+
+  .navbar .dropdown-menu {
+    font-size: 0.9rem;
+  }
+}
+
+/*DEVELOPER: Sheikh Fahad Irfan, IS117-005, Fall, 2024 */
+/* Sidebar Filters */
+.sidebar-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.card-header {
+  background-color: #333;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card-header:hover {
+  background-color: #555;
+}
+
+.list-group-item {
+  border: none;
+  padding: 10px 15px;
+}
+
+.list-group-item:hover {
+  background-color: #f1f1f1;
+}
+
+/* Product Grid */
+.card {
+  margin-bottom: 20px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
